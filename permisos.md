@@ -12,3 +12,5 @@ ls -l
 
 Aparecerá algo similar a la imagen de abajo
 
+# ![imagen1](imagenes/image01.jpg "Estructura de permisos")
+
