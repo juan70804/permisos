@@ -37,16 +37,14 @@ Aparecerá algo similar a la imagen de abajo
 ```bash
 784
 ```
-$7x10^{2} = 700 + 8x10^{1} + 4x10^{0} = 700 + 80 + 4 = 784$
+7x10<sup>2</sup> = 700 + 8x10<sup>1</sup> + 4x10<sup>0</sup> = 700 + 80 + 4 = 784
 
 ## Sistema binario 
 
 ```bash
 110
 ```
-1x2<sup>2</sup>
-
-+ 1x2^{1} + 0x2^{0} = 4 + 2 + 0 = 6$
+1x2<sup>2</sup> + 1x2<sup>1</sup> + 0x2<sup>0</sup> = 4 + 2 + 0 = 6
 
 ### ¡Atento!
 
