@@ -12,7 +12,7 @@ ls -l
 
 Aparecerá algo similar a la imagen de abajo
 
-#![imagen1](imagenes/image01.jpg "Estructura de permisos")
+# ![imagen1](imagenes/image01.jpg "Estructura de permisos")
 
 #### Tipos de permisos 
 
@@ -30,4 +30,36 @@ Aparecerá algo similar a la imagen de abajo
 | 5 | <span style="color:blue"> *1*</span> |  <span style="color:yellow"> *0*</span> | <span style="color:green"> *1*</span> |
 | 6 | <span style="color:blue"> *1*</span> |  <span style="color:yellow"> *1*</span> |  <span style="color:green"> *0*</span> |
 | 7 | <span style="color:blue"> *1*</span> |  <span style="color:yellow"> *1*</span> | <span style="color:green"> *1*</span> |
+
+## Sistema binario 
+
+## Sistema decimal
+```bash
+784
+```
+$ 7x10^{2} = 700 + 8x10^{1} + 4x10^{0} = 700 + 80 + 4 = 784$
+
+## Sistema binario 
+
+```bash
+110
+```
+$ 1x2^{2} + 1x2^{1} + 0x2^{0} = 4 + 2 + 0 = 6 $
+
+### ¡Atento!
+
+La posición del dígito importa. Si la posición vale 1, los valores posibles son: Lectura = 4, Escritura = 2, Ejecución = 0
+
+## Permisos comunes
+
+|Configuración |Número | Significado |
+| -------- | -------- | -------- |
+| -rw------- | 600 | Únicamente el propietario (*owner*) tiene permisos de *lectura* (readable) y *escritura* (writeable). |
+| -rw-r--r-- | 644 | Sólamente el *owner* tiene permisos de  *lectura* y *escritura*; el grupo y otros tienen acceso a *lectura*.
+| -rwx------ | 700 | Solo el *owner* tiene permisos de *lectura* y *ejecución* (executable). |
+| -rwxr-xr-x | 755 | El *owner* tiene permisos de *lectura*, *escritura* y *ejecución*; el grupo y otros solamente tienen acceso a *lectura* y *ejecución*. | 
+| -rwx--x--x | 711 | El *owner* tiene permisos de *lectura*, *escritura*, y *ejecución*; el grupo y otros únicamente de *ejecución*. | 
+| -rw-rw-rw-- | 666 | Todos tienen acceso a *lectura* y *escritura* en el archivo. **Usarlo de ser extremadamente necesario** | 
+| rwxrwxrwx | 777 | Todos tienen acceso total a *escritura*, *lectura*, y *ejecución*. **Estos permisos pueden ser peligrosos** |
+| | |
 
