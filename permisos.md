@@ -12,5 +12,22 @@ ls -l
 
 Aparecerá algo similar a la imagen de abajo
 
-# ![imagen1](imagenes/image01.jpg "Estructura de permisos")
+#![imagen1](imagenes/image01.jpg "Estructura de permisos")
+
+#### Tipos de permisos 
+
+* Lectura (readable) - se refiere a la capacidad de un usuario para leer el contenido del archivo.
+* Escritura (writeable) - se refueren a la capacidad de un usuario para escribir o modificar un archivo o directorio.
+* Ejecución (executable) - el permiso de ejecución afecta la capacidad de un usuario para ejecutar un archivo o ver el contenido de un directorio.
+
+|   | r | w | x |
+| -------- | -------- | -------- | -------- |
+| 0 | <span style="color:blue"> *0*</span> | <span style="color:yellow"> *0*</span> |  <span style="color:green"> *0*</span> |
+| 1 | <span style="color:blue"> *0*</span> |  <span style="color:yellow"> *0*</span> |  <span style="color:green"> *1*</span> |
+| 2 | <span style="color:blue"> *0*</span> |  <span style="color:yellow"> *1*</span> |  <span style="color:green"> *0*</span> |
+| 3 | <span style="color:blue"> *0*</span> |  <span style="color:yellow"> *1*</span> | <span style="color:green"> *1*</span> |
+| 4 | <span style="color:blue"> *1*</span> |  <span style="color:yellow"> *0*</span> |  <span style="color:green"> *0*</span> |
+| 5 | <span style="color:blue"> *1*</span> |  <span style="color:yellow"> *0*</span> | <span style="color:green"> *1*</span> |
+| 6 | <span style="color:blue"> *1*</span> |  <span style="color:yellow"> *1*</span> |  <span style="color:green"> *0*</span> |
+| 7 | <span style="color:blue"> *1*</span> |  <span style="color:yellow"> *1*</span> | <span style="color:green"> *1*</span> |
 
