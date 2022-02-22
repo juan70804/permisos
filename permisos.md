@@ -63,3 +63,51 @@ La posición del dígito importa. Si la posición vale 1, los valores posibles s
 | rwxrwxrwx | 777 | Todos tienen acceso total a *escritura*, *lectura*, y *ejecución*. **Estos permisos pueden ser peligrosos** |
 | | |
 
+## Permisos estandarizados
+
+Para cambiar los permisos de un archivo se emplea el comando chmod, que tiene el formato siguiente:
+
+```bash
+chmod [tipo de usuario] [operación] [permiso] archivo
+```
+
+* Tipo de usuario - Indica a quien va dirigido el permiso que se desea modificar.
+Pueden combinarse las letras **u** para el propietario, *g* para el grupo, **o** para otros usuarios, y *a* para todos los anteriores. **Si se salta este parámetro, el sistema supone a**
+* Operación - Indica la operación que se desea hacer con el permiso. Para dar un permiso se pondrá un **+**, y para quitarlo se pondrá un **-**.
+* Permiso - permiso Indica el permiso que se quiere otorgar o quitar. Será una combinación cualquiera de las letras anteriores : **r**, **w**, **x**.
+
+* Archivos - Nombres de los archivos que se pretenden modificar sus accesos.
+
+### Ejercicios simples
+
+```bash
+chmod u=rx, g=, o= archivo.txt
+```
+
+#### que es igual a 
+
+```bash
+chmod 500 archivo.txt
+```
+#### Para dar permiso de lectura y ejecución a un archivo a otros al que pertenece el archivo.
+
+```bash
+chmod o=rx archivo.txt
+```
+
+#### ó
+
+```bash
+chmod 005 archivo.txt
+```
+### Permisos avanzados
+
+* **-** sin permisos especiales 
+* **d** es un directorio
+* **|** puede ser un archivo o el directorio es un enlace simbólico
+* **s** indica los permisos setuid/setgid. Esto no se muestra en la parte de permisos especiales de la pantalla de permisos, pero se representa como una **s** en la parte de lectura de los permisos de propietario o grupo.
+* **t** esto indica los permisos de bits adhesivos. Esto no se muestra en la parte de permisos especiales de la pantalla de permisos, pero se representa como una **t** en la parte ejecutable de los permisos de todos los usuarios.
+
+
+
+
